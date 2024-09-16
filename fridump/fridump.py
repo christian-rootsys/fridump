@@ -3,8 +3,8 @@ import frida
 import os
 import sys
 import frida.core
-import dumper
-import utils
+from fridump import dumper
+from fridump import utils
 import argparse
 import logging
 
@@ -158,3 +158,6 @@ if STRINGS:
         i += 1
         utils.printProgress(i, l, prefix='Progress:', suffix='Complete', bar=50)
 print("Finished!")
+
+def main():
+    pass
